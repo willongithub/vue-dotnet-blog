@@ -10,7 +10,12 @@
       "ProjectGuid": "0bcf792b-30ff-4d67-9dc5-f8cf4aa20b32",
       "DisplayName": "vue_dotnet_blog",
       "ColorIndex": 1
+    },
+    "2e038b88-2076-41ce-8127-5a941363ff6e": {
+      "ProjectGuid": "2e038b88-2076-41ce-8127-5a941363ff6e",
+      "DisplayName": "vue_dotnet_blog_backend",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
