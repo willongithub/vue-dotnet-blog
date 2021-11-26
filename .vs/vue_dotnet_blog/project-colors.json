@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "07d13888-7d3d-4f8b-9928-b5a63820368a": {
+      "ProjectGuid": "07d13888-7d3d-4f8b-9928-b5a63820368a",
+      "DisplayName": "vue_dotnet_blog_backend",
+      "ColorIndex": 0
+    },
+    "0bcf792b-30ff-4d67-9dc5-f8cf4aa20b32": {
+      "ProjectGuid": "0bcf792b-30ff-4d67-9dc5-f8cf4aa20b32",
+      "DisplayName": "vue_dotnet_blog",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
