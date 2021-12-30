@@ -3,32 +3,50 @@
   <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   <div class="container">
     <!-- <h1>Hello World</h1> -->
-    <Header title="Task Tracker" />
+    <Header
+      @toggle-add-task="toggleAddTask"
+      title="Task Tracker"
+      :showAddTask="showAddTask"
+    />
+    <router-view :showAddTask="showAddTask"></router-view>
+    <Footer />
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     Header,
+    Footer,
+  },
+  data() {
+    return {
+      showAddTask: false,
+    };
+  },
+  methods: {
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask;
+    },
   },
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 500px;
