@@ -17,7 +17,7 @@ let people;
 people = [
     [1, "Guy", true],
     [2, "Guy", true],
-    [3, "Guy", true]
+    [3, "Guy", true],
 ];
 // Union
 let pid;
@@ -54,3 +54,34 @@ function addNum(x, y) {
 function logOutput(msg) {
     console.log(msg);
 }
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is registered!`;
+    }
+}
+const man1 = new Person(1, "man 1");
+// Subclasses
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, "Man3", "DevOps");
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["a", "b", "c"]);
